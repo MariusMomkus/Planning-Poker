@@ -1,0 +1,38 @@
+.side-bar-logout-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-bar-logout-content:hover {
+  background-color: #f5f5f5;
+}
+
+.side-bar-logout-content svg {
+  font-size: 1.2rem;
+  color: #676767;
+}
+
+.side-bar-logout-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  padding-bottom: 2rem;
+}
+
+.MuiPaper-root.logout-dialog-slide {
+  padding: auto 2rem;
+}
+
+.MuiDialogActions-root.logout-action-buttons {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+
+.MuiDialogTitle-root.logout-context-description {
+  margin: 1rem 0 0 0;
+  padding: 1rem 2rem;
+}

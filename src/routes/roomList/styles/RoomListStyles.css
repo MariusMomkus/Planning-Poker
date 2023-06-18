@@ -1,0 +1,194 @@
+.room-list-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.room-list-container {
+  position: relative;
+  width: 80%;
+  min-width: 528px;
+  background-color: #ffffff;
+  padding: 0rem 2rem;
+  margin: 1rem;
+  border-radius: 4px;
+  border: 1px solid #cecece;
+}
+
+.room-list-container:nth-child(1) {
+  margin-top: 5rem;
+}
+
+.room-info-row:hover {
+  cursor: pointer;
+}
+
+.room-info-row th,
+.room-info-row td {
+  padding: 0.5rem 1rem;
+}
+
+.MuiTableCell-root.room-info-more-details {
+  padding: 0 0.5rem;
+}
+
+.room-info-more-details .MuiTypography-root {
+  margin: 0.5rem auto;
+}
+
+.room-list-invited-rooms,
+.room-list-owned-rooms {
+  margin: 0rem 0 2rem 0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.room-list-item-text {
+  color: black;
+  text-align: center;
+}
+
+#room-list-error-message {
+  text-align: left;
+  font-weight: 500;
+}
+
+.room-list-header {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  color: #1d1d1d;
+}
+
+.owned-room-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.owned-room-accordion {
+  width: 100%;
+}
+
+.edit-room-icon,
+.delete-room-icon {
+  color: #2d2d2d;
+}
+
+.edit-room-icon:hover,
+.delte-room-icon:hover {
+  cursor: pointer;
+}
+
+.delete-room-room-name,
+.edit-room-room-name {
+  color: #0f71aa;
+  text-decoration: underline;
+}
+
+.edit-room-input-field:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.select-card-deck-field,
+.select-participants-field {
+  width: 100%;
+}
+
+.edit-room-field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+div.MuiDialogContent-root {
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+.MuiDialogContentText-root.edit-room-context-description {
+  margin-bottom: 0.8rem;
+}
+
+div.MuiDialogActions-root {
+  padding-bottom: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.MuiDialogActions-root.delete-room-action-buttons {
+  padding-bottom: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.MuiDialogTitle-root.edit-room-title {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.MuiDialogTitle-root.delete-room-context-description {
+  margin-top: 1rem;
+}
+
+.room-info-active {
+  color: rgb(0, 233, 0);
+  background-color: rgb(0, 233, 0);
+  margin-top: 0.4rem;
+  font-size: 12px !important;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgba(0, 255, 0, 0.852);
+}
+
+.room-info-inactive {
+  color: rgb(210, 210, 210);
+  background-color: rgb(210, 210, 210);
+  margin-top: 0.4rem;
+  font-size: 1rem !important;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px rgba(179, 179, 179, 0.364);
+}
+
+.room-action-icon-container {
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.room-action-icon-container svg {
+  font-size: 20px;
+  color: #083e5d;
+}
+
+.table-header {
+  background-color: #083e5d;
+}
+
+.table-header .MuiTableCell-root {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.MuiFormHelperText-root:nth-last-child(1) {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .room-list-container {
+    width: 530px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .room-list-container {
+    min-width: none;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .room-list-wrapper {
+    width: 100%;
+    display: inline-block;
+  }
+}

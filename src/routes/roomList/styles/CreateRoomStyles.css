@@ -1,0 +1,85 @@
+@import url("https://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+
+.create-room-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-room-container {
+  width: 60%;
+  background-color: #ffffff;
+  min-width: 400px;
+  padding: 1rem 3rem 4rem 3rem;
+  margin: 5rem 1rem 1rem 1rem;
+
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
+
+.create-room-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-room-header {
+  font-size: 36px;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.create-room-success-popup .MuiDialogActions-root {
+  padding: 1rem 1rem;
+}
+
+.MuiDialogContentText-root.create-room-success-popup-description {
+  font-weight: bold;
+  margin: 2rem 0 0.8rem 0;
+  font-size: 1.25rem;
+}
+
+.MuiTextField-root.create-room-field,
+.select-card-deck,
+.select-invited-users {
+  margin-bottom: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #ffffff inset;
+}
+
+.MuiButton-contained.create-room-button {
+  width: 30%;
+  min-width: 250px;
+  align-self: center;
+  margin-top: 20px;
+  background-color: #757de8;
+  padding: 16px;
+}
+
+.MuiButton-contained.create-room-button:hover {
+  background-color: #646ac0;
+}
+
+.MuiButton-contained.create-room-button:disabled {
+  background-color: #ebebe4;
+}
+
+.MuiInputLabel-root.MuiInputLabel-shrink,
+.MuiInputLabel-root.Mui-focused {
+  background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .create-room-container {
+    min-width: 90%;
+  }
+
+  .MuiButton-contained.create-room-button {
+    width: 100%;
+    min-width: min-content;
+    align-self: auto;
+  }
+}

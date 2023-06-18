@@ -1,0 +1,323 @@
+/* RESET */
+.room-container *,
+.room-container {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/*~~~~~~~TOP LAYER~~~~~~~~*/
+.room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 94px 16px 32px 16px;
+  color: black;
+  background-color: var(--main-background);
+}
+
+/*~~~~~~~MAIN CONTAINERS~~~~~~~~*/
+
+.room-container .room-top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.room-container .room-middle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*~~~~~~~room-name~~~~~~~~*/
+.room-top-container .room-room-name {
+  font-size: 36px;
+  font-weight: bold;
+  /* color: #1d1d1d; */
+}
+
+.room-top-container .room-room-name-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/*~~~~~~~STORY~~~~~~~~*/
+
+.room-room-story-container {
+  display: flex;
+  gap: 12px;
+}
+
+.room-container .room-room-story-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.room-container .room-story-name {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 30%; */
+  height: 100%;
+  /* min-height: 60px; */
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/*~~~~~~~CARDS~~~~~~~~*/
+.room-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 67%;
+  gap: 12px;
+}
+
+.room-container .room-card-active {
+  padding: unset;
+  border: solid 1px #e5e5e5;
+  border-radius: 4px;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: white;
+  transition: none;
+  color:#000;
+}
+
+.room-container .room-card-active:hover {
+  box-shadow: 1.5px -0.5px 1px 0px rgb(235, 245, 245);
+  /* box-shadow: 1.5px -0.5px 1px 0px rgb(213, 222, 222); */
+  /* box-shadow: 1.5px -0.5px 1px 0px rgb(217, 223, 223); */
+  /* box-shadow: 1px 0.5px 1px 0px rgb(198, 210, 210); */
+  transform: translate3d(0px, -4px, 0px);
+  background-color: #e8ecec;
+}
+
+.room-container .room-card-selected{
+  background-color: rgb(224, 215, 215);
+}
+
+.room-container .room-card-inactive {
+  padding: unset;
+  border: solid 1px #e5e5e5;
+  border-radius: 4px;
+  box-shadow: none;
+  /* cursor: pointer; */
+  background-color: white;
+  /* opacity: 0.5; */
+  color: #00000044;
+  /* background-color: rgba(0, 0, 0, 0.26); */
+  transition: none;
+}
+
+.room-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 168px;
+  width: 120px;
+  font-weight: 600;
+  font-size: 60px;
+  /* color: #000; */
+}
+
+/*~~~~~~~USERS~~~~~~~~*/
+.room-users-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.room-container .room-table {
+  box-shadow: none;
+  width: 100%;
+}
+
+.room-table-head>tr {
+  font-weight: bold;
+  background-color: var(--table-color);
+  border: 1px solid var(--table-color);
+}
+
+.room-table th,
+.room-table td {
+  padding: 0.5rem 1rem;
+  /* padding: 8px 16px; */
+}
+
+.room-table-head th {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.room-table-body>tr {
+  border: 1px solid var(--table-color);
+  background-color: #fff;
+}
+
+.room-container .room-users-total td {
+  font-weight: 450;
+  /* letter-spacing: 0.3px; */
+}
+
+/*~~~~~~~CONTROL PANEL~~~~~~~~*/
+.room-control-panel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* .room-control-panel>.room-control-panel-button:hover {
+  background-color: var(--dark);
+} */
+
+.room-container .room-control-panel-stats {
+  padding: 8px;
+}
+.room-control-panel-average-title-inactive{
+  opacity: 0.3;
+}
+/*~~~~~~~HISTORY~~~~~~~~*/
+
+.room-container .room-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 2%;
+  background-color: #fff;
+}
+
+.room-container .room-history-table-head-icon {
+  fill: #083e5d;
+  /* font-size: 20px; */
+  /* fill: #0079b9; */
+}
+
+.room-container .room-history-table-cell {
+  width: 30%;
+}
+
+/*~~~~~~~BUTTON~~~~~~~~*/
+.room-container button {
+  text-transform: capitalize;
+  background-color: #0079b9;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.room-container button:hover {
+  box-shadow: none;
+}
+
+.room-container .room-control-panel-button-inactive{
+  opacity: 0.2;
+  cursor: default;
+}
+.room-container .room-control-panel-button-inactive:hover {
+  opacity: 0.2;
+  background-color: #0079b9;
+  cursor: default;
+}
+
+/*~~~~~~~SEARCH~~~~~~~~*/
+.room-container .room-search-input {
+  background-color: #fff;
+}
+
+/*~~~~~CSV-EXPORT~~~~~~~*/
+.room-search-export-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*~~~~~~~ICONS~~~~~~~~*/
+.room-container .room-icons-active {
+  fill: #083e5d;
+  /* fill: #757de8; */
+}
+
+.room-container .room-icons-inactive {
+  fill: #083e5d;
+  /* fill: #757de8; */
+  opacity: 0.3;
+}
+
+/*~~~~~~~CHARTS~~~~~~~~*/
+.room-chart-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  flex-direction: row;
+
+  gap: 6px;
+  -webkit-animation-name: room-chart-container;
+  animation-name: room-chart-container;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes room-chart-container {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes room-chart-container {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.room-date-chart-container,
+.room-estimate-chart-container {
+  flex-basis: 50%;
+  /* position: relative; */
+  padding-top: 12px;
+  background-color: #fff;
+}
+
+.MuiTypography-root.chart-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1130px) {
+  .room-chart-container {
+    flex-wrap: wrap;
+  }
+
+  .room-date-chart-container,
+  .room-estimate-chart-container {
+    flex-basis: 100%;
+  }
+}

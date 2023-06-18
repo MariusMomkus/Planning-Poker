@@ -1,0 +1,24 @@
+.box-mobile {
+  flex-grow: 1;
+  padding: 3;
+  height: "100vh";
+  background-color: #f2f2f2;
+}
+.box-flex {
+  display: flex;
+}
+.toolbar-color {
+  background-color: #083e5d;
+}
+
+.MuiPaper-root.app-header {
+  padding-right: 0 !important;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+.app-logo {
+  height: 30px;
+}

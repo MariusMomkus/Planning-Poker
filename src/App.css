@@ -1,0 +1,126 @@
+@import url("https://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+
+* {
+  font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --dark: #1c3879;
+  --blue: #607eaa;
+  --gray: #ececec;
+  --light: #f9f5eb;
+  --light-blue: #757de8;
+  /* --table-color: #cecece; */
+  /* --table-color: #083e5d; */
+  --table-color: #e6ecee;
+  --main-background: #f8f8f8;
+}
+
+.App,
+nav {
+  text-align: left;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #ececec;
+  color: #353535;
+  overflow: auto;
+}
+
+.app-name {
+  font-size: 32px;
+}
+
+.auth-form-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form-container,
+.login-form,
+.register-form,
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container {
+  padding: 2rem 4rem;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  margin: 0.5rem;
+  background-color: white;
+}
+
+.login-form,
+.register-form {
+  gap: 16px;
+}
+
+.input-field-label {
+  text-align: left;
+  padding: 4px;
+  background-color: white !important;
+}
+
+/* #login-email {
+  background-color: white !important;
+} */
+
+.auth-forms-input-fields {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #cecece;
+}
+
+#remind-password-button,
+#login-button,
+#signup-button {
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: var(--light-blue);
+  color: white;
+}
+
+#login-button {
+  margin-top: 24px;
+}
+
+.link-button {
+  background: none;
+  color: #353535;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+}
+
+.error-message {
+  color: #ba000d;
+  font-size: 12px;
+}
+
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.password-checklist li {
+  align-items: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 300px) {
+  .auth-form-container {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,19 @@
+image: node:16
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Build and Test
+          caches:
+            - node
+          script:
+            - npm install
+            - npm test
+      - step:
+          name: Lint the node package
+          script:
+            - npm install eslint
+            - npx eslint src
+          caches:
+            - node

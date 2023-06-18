@@ -1,0 +1,16 @@
+.side-bar-user-card {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding: 0.8rem 0.6rem 1rem 0.6rem;
+  align-items: center;
+}
+
+.side-bar-user-card svg {
+  font-size: 2.4rem;
+  color: #97c5c6;
+}
+
+.side-bar-user-name {
+  font-weight: 600;
+}
