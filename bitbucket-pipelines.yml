@@ -1,0 +1,11 @@
+#image: gradle:6.6.0
+
+#pipelines:
+#  default:
+#    - parallel:
+#        - step:
+#            name: Build and Test
+#            caches:
+#              - gradle
+#            script:
+#             - ./gradlew build

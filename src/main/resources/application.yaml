@@ -1,0 +1,23 @@
+server:
+  port : 8081
+
+spring:
+  datasource:
+    username: ace
+    password: Xm_f3nx^Qu3$$DZL
+    url: jdbc:mysql://localhost:3306/planningpoker
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+  security:
+    basic:
+      enable: "false"
+    ignored: /**
+
+  liquibase:
+    change-log: classpath:/db/changelog/liquibase-changelog.xml
